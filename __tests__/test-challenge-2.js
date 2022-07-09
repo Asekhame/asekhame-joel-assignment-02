@@ -1,11 +1,20 @@
 const assignment = require('../src/assignment.js');
 
-function countEvenNumbers(arrayOfNumbers) {
-const arr = [
+const { countEvenNumbers } = assignment;
+const maybe = countEvenNumbers === undefined ? test.skip : test;
+
+maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in array of numbers', () => {
+    const numbers = [
         17,
         0,
         67,
         41,
+        49,
+        21,
+        1,
+        86,
+        76,
+        2,
         54,
         14,
         93,
@@ -18,15 +27,4 @@ const arr = [
         64
     ]
     expect(countEvenNumbers(numbers)).toBe(9);
-});    //loop through the array
-    for(var i=0; i < arrayOfNumbers.length; i++){
-        //Find even number. Use modulus to get even numbers
-        var even = arrayOfNumbers[i] % 2;
-        if(even==0){
-            arr.push(arrayOfNumbers[i]);
-        }
-       
-    }
-    return sumOfNumbers(arr);
-}  
-    
+});
