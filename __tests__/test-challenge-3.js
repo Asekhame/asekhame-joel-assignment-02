@@ -1,5 +1,16 @@
 const assignment = require('../src/assignment.js');
 
+function celsiusToFahrenheit(arrayOfNumbers) {
+    //F = C×(9/5)+32
+    var arr = [];
+    for(var i=0; i < arrayOfNumbers.length; i++){
+        var f = arrayOfNumbers[i] * (9/5) + 32;
+        var truc = Math.trunc(f)
+        arr.push(truc);
+    }
+    return arr;
+}
+
 const { celsiusToFahrenheit } = assignment;
 const maybe = celsiusToFahrenheit === undefined ? test.skip : test;
 

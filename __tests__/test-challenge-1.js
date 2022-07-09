@@ -1,4 +1,13 @@
 const assignment = require('../src/assignment.js');
+function sumOfNumbers(arrayOfNumbers) {
+    var sum = 0;
+        //loop through the array
+    for(var i=0; i < arrayOfNumbers.length; i++){
+        //Add numbers
+        sum += arrayOfNumbers[i];
+    }
+    return sum;
+}
 
 const { sumOfNumbers } = assignment;
 const maybe = sumOfNumbers === undefined ? test.skip : test;
