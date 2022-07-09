@@ -1,13 +1,5 @@
 const assignment = require('../src/assignment.js');
 function sumOfNumbers(arrayOfNumbers) {
-    var sum = 0;
-        //loop through the array
-    for(var i=0; i < arrayOfNumbers.length; i++){
-        //Add numbers
-        sum += arrayOfNumbers[i];
-    }
-    return sum;
-} maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () => {
     const sum = [
         68,
         -68,
@@ -32,3 +24,11 @@ function sumOfNumbers(arrayOfNumbers) {
     ];
     expect(sumOfNumbers(numbers)).toBe(75);
 });
+        //loop through the array
+    for(var i=0; i < arrayOfNumbers.length; i++){
+        //Add numbers
+        sum += arrayOfNumbers[i];
+    }
+    return sum;
+}
+    
