@@ -14,10 +14,9 @@ function countEvenNumbers(arrayOfNumbers) {
     return sumOfNumbers(arr);
 } 
 const { countEvenNumbers } = assignment;
-const maybe = countEvenNumbers === undefined ? test.skip : test;
 
 maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in array of numbers', () => {
-    const numbers = [
+    const arr = [
         17,
         0,
         67,

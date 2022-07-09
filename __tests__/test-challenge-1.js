@@ -7,13 +7,8 @@ function sumOfNumbers(arrayOfNumbers) {
         sum += arrayOfNumbers[i];
     }
     return sum;
-}
-
-const { sumOfNumbers } = assignment;
-const maybe = sumOfNumbers === undefined ? test.skip : test;
-
-maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () => {
-    const numbers = [
+} maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () => {
+    const sum = [
         68,
         -68,
         27,
